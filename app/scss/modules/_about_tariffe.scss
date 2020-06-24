@@ -1,0 +1,57 @@
+.about-tariffe{
+    min-height: 100vh;
+    background-image: url('../img/bg-heands-1.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size:  100% ;
+    font-size: 1rem;
+
+    &__description{
+        border-top: 2px solid $yellow;
+        border-bottom: 2px solid $yellow;
+    }
+
+    &__text{
+        border-bottom: 2px solid $yellow;
+    }
+}
+
+.app-btn{
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    background-color: $yellow;
+    color: #fff;
+    transition: box-shadow .3s;
+    margin-top: 2rem;
+
+    &:hover{
+        transition: .3s;
+        box-shadow: 1px 3px 7px #ccc;
+    }
+
+    &:focus{
+        transition: .3s;
+        outline: none;
+    }
+
+    &:active{
+        transition: .3s;
+        box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.575),;
+    }
+}
+
+.fit{
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.pictures{
+    border-radius: .5rem;
+    overflow: hidden;
+    // min-width: 100px;
+    // flex: 1 1 120px;
+}

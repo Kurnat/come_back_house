@@ -1,0 +1,27 @@
+// Required Core Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+@import 'base/base';
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/mixin';
+@import 'modules/loader';
+@import 'modules/header-navigation';
+@import 'modules/header-slider.section';
+@import 'modules/servises.section';
+@import 'modules/features.section';
+@import 'modules/reviews-section';
+@import 'modules/portfolio.section';
+@import 'modules/before-after.section';
+@import 'modules/team.section';
+@import 'modules/timer.section';
+@import 'modules/flipflop.module';
+@import 'modules/footer';
+
+
+// @media only screen and (orientation:portrait){
+//     body {
+//       height: 100vw;
+//       transform: rotate(90deg);
+//     }
+//   }

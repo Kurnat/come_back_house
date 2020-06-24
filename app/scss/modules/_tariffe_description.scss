@@ -1,0 +1,31 @@
+.tariff_description{
+    min-height: 100vh;
+    background-image: url("../img/bg-tarrife.png");
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    font-size: .8rem;
+    // margin-top: -.6rem;
+    // margin-bottom: -.6rem;
+    background-color: #242424;
+}
+
+.ul-in{
+    list-style-position: inside;
+}
+
+.tariff-content{
+position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 1px;
+        height: 80%;
+        margin: 10% 0;
+        background-color: #ccc;
+        top: 0;
+        bottom: 0;
+        right: 0;
+    }
+}

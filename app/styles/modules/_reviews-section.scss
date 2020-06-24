@@ -1,0 +1,129 @@
+.reviews {
+    // url("../images/coments-hends.png"),
+    background-image: url("../images/wall.png");
+    background-size: 100% auto;
+    background-position-y: -10%;
+    background-repeat: no-repeat;
+}
+
+
+
+.glide {
+    &-clients {
+
+        &__slides {
+            height: 100%;
+            padding: 1%;
+        }
+ 
+        &__slide {
+            min-height: 100%;
+            background-color: #fff;
+            box-shadow: 0 2px 10px 1px rgba(119, 119, 119, 0.564);
+            border-radius: .5rem;
+            
+        }
+    }
+
+    //arrows
+    &__arrow {
+        &.client {
+            cursor: pointer;
+            top: 50%;
+            position: absolute;
+            transform: translateY(-50%);
+            border: 0;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            outline: 0;
+            height: 2rem;
+            width: 2rem;
+            box-shadow: 0 2px 5px 1px rgba(119, 119, 119, 0.564);
+        }
+        &.client:hover {
+            transition: 0.1s;
+            background-color: #fee006;
+            color: #fff;
+        }
+        &--right.client {
+            right: -.7%;
+        }
+        &--left.client {
+            left: -1.7%;
+        }
+    }
+}
+
+// reviews cart
+.reviews_cart {
+    padding: 1rem;
+    overflow-y: auto;
+    &--img {
+        flex: 0 0 7.5rem;
+        border-radius: 50%;
+        background-position: auto;
+        overflow: hidden;
+        height: 7.5rem;
+        width: 7.5rem;
+        background-image: url("../images/coments-women.png");
+        background-position: center;
+        background-size: cover;
+        margin-right: 4%;
+        box-shadow: 0 2px 5px 1px rgba(119, 119, 119, 0.564);
+    }
+
+    &--img.men {
+        background-image: url("../images/coments-men.png");
+    }
+
+    &--img.women {
+        background-image: url("../images/coments-women.png");
+    }
+
+    &--header{
+        display: flex;
+        align-items: center;
+        margin-bottom: 2%;
+    }
+
+    &--date{
+        font-weight: 900;
+        h5{
+            font-size: 1.3rem;
+            margin-bottom: 0.7rem;
+        }
+        p{
+            font-size: 1.05rem;
+        }
+    }
+
+    &--content{
+        padding: 1rem 0;
+        color: rgba(0, 0, 0, 0.603);
+    }
+
+    &--link{
+        text-align: right;
+        a{
+            text-decoration: none;
+        color: #008ae0;
+
+        &:link{
+            color: #008ae0;
+        }
+        &:visited{
+            color: #008ae0;
+        }
+        &:hover{
+            color: #fee006;
+        }
+        &:active{
+            color: #fe9b06;
+        }
+        }
+       
+    }
+}

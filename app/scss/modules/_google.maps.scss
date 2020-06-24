@@ -1,0 +1,30 @@
+.google_maps {
+    height: 500px;
+    position: relative;
+    background-color: #989aaa;
+    padding-top: 5px;
+}
+
+#map {
+
+    height: 100%;
+    width: 100%;
+}
+
+.google__form {
+    font-size: .7rem;
+    text-align: center;
+    position: absolute;
+    width: 280px;
+    // min-height: 300px;
+    // border: 4px solid rgb(68, 66, 66);
+    background-color: #fff;
+    border-radius: 5px;
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -50%);
+}
+
+.rem1 {
+    font-size: .8rem;
+}

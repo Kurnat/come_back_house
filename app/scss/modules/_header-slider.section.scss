@@ -1,0 +1,208 @@
+
+// ####################################################################################
+
+.btn-scroll {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #fdce02;
+  box-shadow: 0px -2px 35px 0px rgba(231, 166, 26, 0.54);
+  background-image: url('../img/arrow.png');
+  background-repeat: no-repeat;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  font-size: 9rem;
+  transition: bottom 0.3s ease, background-position 0.18s ease;
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-scroll-down {
+  left: 19%;
+  bottom: -3.3rem;
+  background-position: 50% 20%;
+  z-index: 120;
+
+  &:hover {
+    background-position: 50% 35%;
+    bottom: -2.5rem;
+  }
+}
+
+.btn-scroll-left {
+  display: inline-block;
+  height: 6rem;
+  width: 6rem;
+  right: -60%;
+  bottom: -5%;
+  transform: rotate(-90deg);
+  background-position: 60% 50%;
+}
+
+.titles {
+  cursor: default;
+  position: relative;
+  z-index: 50;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fee006;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -0.8rem;
+    display: block;
+    width: 5rem;
+    height: 3px;
+    background-color: #ff0;
+    transition: 0.6s ease-out;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+}
+
+// ####################################################################################
+
+.glide {
+  &__slide--active {
+    .glide-header__content {
+      opacity: 1;
+      transition: ease-in 0.7s;
+    }
+  }
+
+  &-header {
+    z-index: 100;
+
+    &__content {
+      opacity: 0;
+    }
+
+    &__arrow {
+      position: absolute;
+      color: #ffffffb7;
+      outline: none;
+      font-size: 2rem;
+      margin: 0 1rem;
+      cursor: pointer;
+      border-radius: 50%;
+      top: 50%;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #ffffff;
+        transition: 0.3s;
+      }
+
+      &--right {
+        right: 0;
+      }
+    }
+
+    // radio buttons
+    &__bullets {
+      position: absolute;
+      bottom: 0.5rem;
+      left: 50%;
+    }
+
+    &__bullet {
+      height: .5rem;
+      width: .5rem;
+      border: 1.5px solid #fdce02;
+      border-radius: 50%;
+      outline: none;
+      background-color: transparent;
+      padding: 3.5px;
+    }
+  }
+
+  // buttons left and right
+  &__bullet {
+    &--active {
+      transition: 0.4s;
+      background-color: #fdce02;
+      border: 1.5px solid #fdce02;
+      outline: none;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &-header__slide {
+    position: relative;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    cursor: grab;
+    filter: saturate(150%);
+  }
+
+  .first-slide {
+    background-image: url("../img/slider-house-1.png");
+  }
+  .second-slide {
+    background-image: url("../img/slider-house-2.png");
+  }
+  .third-slide {
+    background-image: url("../img/slider-house-3.png");
+  }
+}
+
+// Buttons efect
+
+.basicBox {
+  width: 130px;
+  height: 65px;
+  margin: 15px 0;
+  color: #ddd;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.15rem;
+  line-height: 65px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+svg rect,
+svg path,
+svg polyline {
+  fill: none;
+  stroke: #ddd;
+  stroke-width: 1;
+}
+
+.basicBox:hover svg rect,
+.swiggleBox:hover svg path,
+.checkBox:hover svg polyline {
+  stroke: #ddd;
+}
+
+svg rect {
+  stroke-dasharray: 400, 0;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+}
+.basicBox:hover svg rect {
+  stroke-width: 3;
+  stroke-dasharray: 35, 245;
+  stroke-dashoffset: 38;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+}

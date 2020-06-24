@@ -1,0 +1,130 @@
+.portfolio {
+    min-height: 100vh;
+    background-image: url("../images/bg-portfolio-1.png");
+    background-position: center;
+    background-size: cover;
+
+    &__category {
+
+        text-decoration: none;
+        list-style: none;
+        li{
+            > button {
+                color: #fff;
+                background-color: transparent;
+                font-size: 1.1rem;
+                outline: 0;
+                border: 0;
+                &:hover {
+                    color: #fee006;
+                    cursor: pointer;
+                }
+            }
+        }
+        
+    }
+
+    &__cart {
+        height: 400px;
+        overflow: hidden;
+        border-radius: .5rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: .3s;
+            object-position: 50%;
+        }
+    }
+
+    .glide__arrow--left{
+        left: -2%;
+    }
+    .glide__arrow--right{
+        right: 0;
+    }
+}
+
+.glide-portfolio {
+    &__slide {
+        position: relative;
+
+        > .portfolio__cart {
+            a{
+                filter: contrast(50%);
+            }
+            transition: 0.3s;
+        }
+        > p {
+            z-index: 100;
+            position: absolute;
+            color: #fff;
+            top: 50%;
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        &:hover > .portfolio__cart {
+            a{
+                filter: contrast(100%);
+            }
+            img {
+                transition: .3s;        
+                width: 105%;
+                height: 105%;
+            }
+        }
+        &--price{
+            position: absolute;
+            z-index: 150;
+            top: 10%;
+            padding: .5rem;
+            background-color: #fee006;
+            border-bottom-right-radius: .2rem;
+            border-top-right-radius: .2rem;
+
+        }
+    }
+}
+
+.glide__slide{
+    overflow: hidden;
+    position: relative;
+    .btn-yellow{
+        cursor: pointer;
+        border: none;
+        outline: none;
+        position: absolute;
+        background-color: #fdce02;
+        box-shadow: 0px -2px 35px 0px rgba(231, 166, 26, 0.54);
+        background-image:  url(../images/arrow.png);
+        background-position: center;
+        transform: rotate(265deg);
+        background-repeat: no-repeat;
+        height: 4.5rem;
+        width: 4.5rem;
+        border-radius: 50%;
+        font-size: 9rem;
+        transition: right 0.3s ease, background-position 0.18s ease;
+        bottom: -.6rem;
+        right: -6rem;
+    }
+
+    &:hover .btn-yellow{
+        right: -.8rem;
+    }
+}
+
+.undrline{
+    border-bottom: 2px solid #fee006;
+    color: #fff;
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+}
+
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+
+}

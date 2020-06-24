@@ -1,0 +1,53 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url('../fonts/#{$file_name}.woff') format('woff'), url('../fonts/#{$file_name}.woff2') format('woff2');
+        font-weight: #{$weight};
+        font-style: #{style};
+
+    }
+}
+
+
+// liberis #################################################
+
+// twentytwenty
+// @import 'modules/liberis/twentytwenty.scss'; 
+
+// Required Core Stylesheet
+// @import "../../node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "../../node_modules/@glidejs/glide/src/assets/sass/glide.core.scss";
+// @import "../../node_modules/@glidejs/glide/src/assets/sass/glide.theme.scss";
+
+// bootstrap 4
+// @import 'bootstrap/bootstrap.min.scss';
+// @import 'bootstrap/bootstrap-reboot.min.scss';
+// @import 'bootstrap/bootstrap-grid.min.scss';
+
+// fonts
+@import 'fonts.scss';
+
+
+@import 'modules/before-after.section';
+@import 'modules/features.section';
+@import 'modules/flipflop.module';
+@import 'modules/footer';
+@import 'modules/header-navigation';
+@import 'modules/header-slider.section';
+@import 'modules/loader';
+@import 'modules/portfolio.section';
+@import 'modules/reviews-section';
+@import 'modules/servises.section';
+@import 'modules/team.section';
+@import 'modules/timer.section';
+@import 'modules/tariffs';
+@import 'modules/about_tariffe';
+@import 'modules/tariffe_description';
+@import 'modules/google.maps';
+@import 'modules/blog';
+
+
+
+
+

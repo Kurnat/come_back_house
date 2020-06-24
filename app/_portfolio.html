@@ -1,0 +1,74 @@
+ <!-- Portfolio section -->
+ <section class="portfolio pt-3 row justify-content-center d-flex p-2" id="portfolio-section">
+    <div class="container col-sm-8">
+        <h3 class=""><span class="titles"><span class="white">Наше</span> портфолио</span></h3>
+
+        <ul class="portfolio__category mt-4 d-flex justify-content-around mb-3 flex-column flex-lg-row">
+            <li><button>Квартиры и коттежи</button></li>
+            <li><button>Коммерчиские помещения</button></li>
+            <li><button>Экстерьер</button></li>
+            <li><button>Разное</button></li>
+        </ul>
+
+        <div class="glide glide-portfolio" id="glide-portfolio">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide label glide__radius glide__portrait">
+                        <a href="#">
+                            <span class="label__price">9000 грн</span>
+                            <span class="label__description">Дизайн 2-комнатной квартиры</span>
+                            <picture>
+                                <source srcset="./img/portfilio-1.webp" type="image/webp">
+                                <img class="label__img" src="./img/portfilio-1.png" alt="tariffe plan">
+                            </picture>
+                            <span class="label__button"></span>
+                        </a>
+                    </li>
+                    <li class="glide__slide label glide__radius glide__portrait">
+                        <a href="#">
+                            <span class="label__price">9000 грн</span>
+                            <span class="label__description">Дизайн 4-комнатной квартиры</span>
+                            <picture>
+                                <source srcset="./img/portfilio-2.webp" type="image/webp">
+                                <img class="label__img" src="./img/portfilio-2.png"
+                                    alt="Дизайн 4-комнатной квартиры">
+                            </picture>
+                            <span class="label__button"></span>
+                        </a>
+                    </li>
+                    <li class="glide__slide label glide__radius glide__portrait">
+                        <a href="#">
+                            <span class="label__price">9000 грн</span>
+                            <span class="label__description">Дизайн 2-уровневой квартиры</span>
+                            <picture>
+                                <source srcset="./img/portfilio-3.webp" type="image/webp">
+                                <img class="label__img" src="./img/portfilio-3.png"
+                                    alt="Дизайн 2-уровневой квартиры">
+                            </picture>
+                            <span class="label__button"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="glide__arrows client d-md-block d-none" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left client" data-glide-dir="<">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="glide__arrow glide__arrow--right client" data-glide-dir=">">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="d-flex justify-content-center d-block d-md-none">
+                <div class="glide__bullets" data-glide-el="controls[nav]" class="glide-header__bullets mt-3">
+                    <button class="glide__bullet glide-header__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet glide-header__bullet" data-glide-dir="=1"></button>
+                    <button class="glide__bullet glide-header__bullet" data-glide-dir="=2"></button>
+                </div>
+            </div>
+        </div>
+        <div class="flex-between">
+            <p class="undrline">До</p>
+            <p class="undrline">После</p>
+        </div>
+    </div>
+</section>

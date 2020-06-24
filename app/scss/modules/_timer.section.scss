@@ -1,0 +1,151 @@
+.timer {
+    min-height: 80vh;
+    background-image: url("../img/bg-chair-1.png");
+    background-position: center;
+    background-size: cover;
+    .time {
+        position: relative;
+        font-size: 2rem;
+        font-weight: bold;
+        height: 1.4rem;
+        width: 1.2rem;
+        padding: 2.1rem 1.7rem;
+        margin: 0 0.6rem;
+        background-color: #fff;
+        border-radius: 0.3rem;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:after {
+            content: ":";
+            position: absolute;
+            right: -0.8rem;
+            color: #fff;
+        }
+    }
+    &__clock {
+        color: #fff;
+        display: flex;
+    }
+    .timer__clock .time {
+        &:nth-child(1)::before {
+            content: "ЧАСОВ";
+            font-size: 0.5rem;
+            position: absolute;
+            top: -1rem;
+            color: #fff;
+        }
+
+        &:nth-child(2)::before {
+            content: "МИНУТ";
+            font-size: 0.5rem;
+            position: absolute;
+            top: -1rem;
+            color: #fff;
+        }
+
+        &:nth-child(3)::before {
+            content: "СЕКУНД";
+            font-size: 0.5rem;
+            position: absolute;
+            top: -1rem;
+            color: #fff;
+        }
+
+        &:last-child::after {
+            content: "";
+        }
+    }
+
+    &__wrapp {
+        
+    }
+
+    &__discount {
+        font-family: muller, Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 900;
+        // margin-right: 10%;
+        &--procent {
+            // margin-top: 3rem;
+            font-size: 6rem;
+            color: #fdd30f;
+            line-height: 5rem;
+        }
+        &--descrip {
+            color: #fff;
+            // font-size: 1.3rem;
+            // margin-left: 2rem;
+        }
+        &--title {
+            color: #fff;
+            white-space: nowrap;
+
+            // margin-bottom: 2rem;
+        }
+    }
+
+    &__wrapper {
+        // border: 1px solid #fff;
+        // margin-left: 35%;
+    }
+}
+
+.timer-form {
+    &__wrapp {
+        // display: flex;
+        // justify-content: center;
+    }
+    &__content {
+        // margin-top: 1rem;
+        // border: 1px solid #fff;
+        padding-top: 1.5rem ;
+        max-width: 300px;
+        color: #fff;
+        font-size: 1.3rem;
+        text-align: center;
+        // margin-left: 15%;
+        // margin-right: auto;
+
+        &--application{
+            margin-bottom: .5rem;
+        }
+    }
+
+    &__input{
+        display: inline-block;
+        width: 80%;
+        font-size: 1.1rem;
+        padding: .5rem 1rem;
+        margin: .3rem;
+        border-radius: .3rem;
+        border: 1px solid transparent;
+        outline: 0;
+        &:focus{
+            border: 1px solid #fdd30f;
+            box-shadow: 0 0px 2px 1px #fdd10fd5;
+        }
+
+        &[type="submit"]{
+            background-color: #fdd30f;
+            // color: #fff;
+        }
+    }
+}
+
+.bg-chair-yellow{
+    background-image: url("../img/bg-and_yellow-chair-1.png");
+    background-color: #171918;
+}
+
+.wrong-value{
+    border: 2px solid red;
+    border-radius: 4px;
+}
+
+
+@media only screen and (max-width: 768px){
+    .timer__wrapper{
+        margin: 0;
+    }
+}

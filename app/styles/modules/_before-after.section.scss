@@ -1,0 +1,18 @@
+.before {
+    height: 60vh;
+    .glide__arrow--right {
+        right: 1rem;
+    }
+    .glide__arrow--left {
+        left: 1rem;
+    }
+
+    &__box {
+        height: 60vh;
+        > img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

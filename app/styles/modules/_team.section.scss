@@ -1,0 +1,76 @@
+.team {
+    height: 100vh;
+    background-color: #fff;
+    background-image:  url("../images/wall.png");
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.glide {
+    &__team {
+        &-slides {
+            padding: 0.3rem 0;
+        }
+        &--slide {
+            box-shadow: 0 2px 10px 1px rgba(119, 119, 119, 0.564);
+            border-radius: 0.5rem;
+            background-color: #fff;
+            height: 70vh;
+            padding-top: 3rem;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &--img {
+            height: 70%;
+            overflow: hidden;
+            filter: grayscale(100%);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &--descritpion {
+            padding: 1rem;
+        }
+
+        &--name {
+            font-size: 1.1rem;
+        }
+        &--profesion {
+            color: #f7d413;
+            font-weight: 100;
+            font-size: 1.05rem;
+
+        }
+    }
+}
+
+#person-1 {
+    background-image: url("../images/team-desiner-1.png");
+    &:hover {
+        background-image: url("../images/team-desiner-2.png");
+        filter: grayscale(0%);
+    }
+}
+
+#person-2 {
+    background-image: url("../images/team-architect-1.png");
+
+    &:hover {
+        background-image: url("../images/team-architect-2.png");
+        filter: grayscale(0%);
+    }
+}
+
+#person-3 {
+    background-image: url("../images/team-desiner1-1.png");
+    &:hover {
+        background-image: url("../images/team-desiner1-2.png");
+        filter: grayscale(0%);
+    }
+}
